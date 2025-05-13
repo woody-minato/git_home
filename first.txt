@@ -2,4 +2,14 @@ Gitの練習をしていきます
 
 5/13
 基本的なフローを学びます
-git init
+1. git init
+2. git add "修正したファイル名"
+3. git  commit 
+　→ここでvimにてコメントを追記する
+
+4. git hub のリポジトリをすでに作成している場合は
+…or push an existing repository from the command line
+の項目のコマンドをターミナルにコピペ
+
+5. ここでパスワードなどを求められるが、これを回避するためには以下のURLを参考にする。
+https://satoimo.blog/github-push-password-prompt-issue/
