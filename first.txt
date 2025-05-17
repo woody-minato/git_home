@@ -33,22 +33,44 @@ gitのデータ構造を学びます。
 
 
 5/16
+・ステージに追加する
 git add <ファイル名>
 git add <ディレクトリ名>
 git add 。
 
+・ローカルリポジトリに追加する
 git commit
 git commit -m "<メッセージ>"
 git commit -v
  ファイルに対してどのような変更を加えたかまでを確認できるコマンド
 
+・状態を確認する
 git status 
 変更されたファイルの確認を行う。
 commitの前に確認しておくことを推奨
 
+・変更差分を確認する
 git diff
 git diff <ファイル名>
  git addする前の変更差分を確認
 
 git diff --staged
  git addした後の変更差分を確認
+
+・過去の変更履歴を確認する
+git log
+
+git log --oneline
+ １行で表示
+
+git log -p <ファイル名>
+
+git log -n <コミット数>
+
+・ファイルの削除を記録
+git rm <ファイル名>
+git rm -r <ディレクトリ名>
+
+git rm --cashed <ファイル名>
+ ワークツリーには残したいけど、gitの記録（リポジトリ）からは削除したい場合のコマンド
+ 例）個人情報など公開したくないファイルを誤ってgitに載せてしまった場合など
