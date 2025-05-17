@@ -83,3 +83,24 @@ git rm --cached <ファイル名>
 
 ・ファイルの移動
 git mv <旧ファイル> <新ファイル>
+
+
+・リモートリポジトリ（github）を新規追加する
+git remote add origin https://github.com/user/repo.git
+ これをやっておかないと、毎回pushするたびにURLを打つ必要があるのでおすすめ
+
+git push <リモート名> <ブランチ名>
+git push origin master
+
+===ここからgithubの操作===
+menu > settings > Developer settings > Personal access tokens > Generate new token
+- Token name
+- Expiration
+
+All repositoryを選択して、contensの権限をRead & Writeにしとかないとpushできない。
+
+========================
+
+
+・githubで管理したくないファイルの操作
+.gitignore というファイルを作成し、そこに管理したくないファイル名を追加する
