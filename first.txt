@@ -45,3 +45,10 @@ git commit -v
 git status 
 変更されたファイルの確認を行う。
 commitの前に確認しておくことを推奨
+
+git diff
+git diff <ファイル名>
+ git addする前の変更差分を確認
+
+git diff --staged
+ git addした後の変更差分を確認
