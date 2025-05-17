@@ -33,4 +33,15 @@ gitのデータ構造を学びます。
 
 
 5/16
-たとえばstyle.cssという新しいファイルを作成した場合、
+git add <ファイル名>
+git add <ディレクトリ名>
+git add 。
+
+git commit
+git commit -m "<メッセージ>"
+git commit -v
+ ファイルに対してどのような変更を加えたかまでを確認できるコマンド
+
+git status 
+変更されたファイルの確認を行う。
+commitの前に確認しておくことを推奨
